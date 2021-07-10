@@ -1,0 +1,22 @@
+{
+  "device": "cuda",
+  "device_ids": "0,1,2,3",
+  "log_path": "data/log_v1.txt",
+  "gpt_path": "data/pretrained_model/gpt2-chinese",
+  "data_path": "data/train_100w.txt",
+  "writer_path": "data/log_summary_v1.cpt_tf_logs",
+  "model_path": "data/chitchat_v1/",
+  "checkpoint_path": "data/checkpoints_v1/checkpoint_epoch25.pt",
+  "resume": true,
+  "use_mmi": true,
+  "epochs": 100,
+  "lr": 2.6e-5,
+  "batch_size": 128,
+  "nuw_workers": 4,
+  "warm_up_steps": 2000,
+  "log_step": 200,
+  "max_len": 100,
+  "eps": 1e-9,
+  "gradient_accumulation_steps": 4,
+  "max_grad_norm": 2.0
+}
